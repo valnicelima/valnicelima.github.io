@@ -8,13 +8,13 @@ const urlsToCache = [
   '/image/offline.svg',
   '/bank/script.js',
   '/bank/bank.css',
-  '/icons/icon192.png'
+  '/icons/icon192.png',
   '/bank/neon.html',
   '/qrcodes/qrcode-neon.png',
   '/bank/image/line.jpg',
   '/bank/image/wallpaper.jpg',
   '/bank/image/og-neon.jpg',
-  '/bank/image/desktop-wallpaper.jpg',
+  '/bank/image/desktop-wallpaper.jpg'
 ];
 
 // Instalação do service worker e cache dos recursos
