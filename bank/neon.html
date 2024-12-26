@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
-    <title>Valnice Lima | Pagamentos</title>
+    <title>Valnice Lima | Transferências</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <link rel="stylesheet" href="https://valnicelima.github.io/bank/bank.css">
-      <link rel="manifest" href="https://valnicelima.github.io/manifest.json"/>
+      <link rel="stylesheet" href="bank.css">
+      <link href="install-banner.css" rel="stylesheet" />
+      <link rel="manifest" href="../manifest.json"/>
       <!-- FAVICON-->
       <meta name="theme-color" content="#d90000">
       <link rel="shortcut icon" href="https://valnicelima.github.io/icons/favicon32.png" />
@@ -22,7 +23,7 @@
       <!-- SEO | OG -->
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="keywords" content="Valnice" />
-      <meta property="og:title" content="Você tem um Pix para fazer" />
+      <meta property="og:title" content="Você tem um Pix para fazer a Valnice Lima" />
       <meta property="og:description" content="Acesse o link para efetuar o pagamento" />
       <meta property="og:image" content="https://valnicelima.github.io/bank/image/og-neon.jpg" />
       <meta content='website' property='og:type' />
@@ -124,15 +125,42 @@
             </div>
         </div>
         <p id="notification-message" class="msn"></p>
-        <button onclick="closeNotification()" class="close-button">Entendi</button>
+        <button onclick="closeNotification()" class="close-btn">Entendi</button>
         
     </div>
 
+      <!-- ADD HOME-SCREEN / ISNTALL BANNER -->
+      <div class="app" id="InstallBanner" style="display: none;">
+         <div class="logo-app"></div>
+         <div class="header-app">
+            <div>
+               <p class="app-title">
+                  Valnice Lima
+               </p>
+               <p class="app-subtitle">
+                  A arte da Costura Amazonense!
+               </p>
+               <p class="add-info">
+                  Não contém anúncios ⭐ v1.0
+               </p>
+            </div>
+            <div class="close-button">
+               <ion-icon name="close-outline" onclick="closeApp()"> </ion-icon>
+            </div>
+         </div>
+         <p class="message">
+            Adicionar o aplicativo a sua tela inicial?
+         </p>
+         <button class="install-btn-app" id="installButton">
+         Adicionar
+         </button>
+      </div><!--end home-screen-->
 
 
 
     <script src="script.js"></script>
     <!--<script src="../pro.js"></script>-->
     <script src="../script-sw.js"></script>
+    <script src="install-banner.js"></script>
 </body>
 </html>

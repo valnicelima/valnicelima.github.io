@@ -47,6 +47,7 @@ body {
     background: #fff;
     font-weight: 600;
     font-size: 18px;
+    
 }
 .header .icon {
     font-size: 24px;
@@ -154,7 +155,7 @@ body {
     text-align: center;
     font-size: 1.1rem;
 }
-.close-button {
+.close-btn {
     margin-top: 10px;
     background-color: #D90000;
     color: white;
