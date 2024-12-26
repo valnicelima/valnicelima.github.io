@@ -40,8 +40,7 @@ function sharePage() {
         navigator.share({
             title: document.title,
             text: 'Link de Pagamentos e Transferências via Pix!',
-            url: 'https://bit.ly/valnicelima'
-            //url: window.location.href
+            url: 'https://bit.ly/valnicelima-neon'
         }).then(() => {
             console.log('Página compartilhada com sucesso!');
         }).catch((error) => {
