@@ -1,32 +1,35 @@
-const CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = 'my-site-cache-v3';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/styles.css',
+  '/preloader.css',
+  '/image/bg.jpg',
   '/offline.html',
   '/image/offline.svg',
-  '/script.js',
-  '/service-worker.js',
-  '/image/desktop-wallpaper.jpg',
-  '/image/line.jpg',
-  '/image/og-neon.jpg',
-  '/image/wallpaper.jpg',
-  '/qrcodes/qrcode-neon.png',
+  '/bank/script.js',
+  '/bank/bank.css',
   '/icons/icon192.png'
+  '/bank/neon.html',
+  '/qrcodes/qrcode-neon.png',
+  '/bank/image/line.jpg',
+  '/bank/image/wallpaper.jpg',
+  '/bank/image/og-neon.jpg',
+  '/bank/image/desktop-wallpaper.jpg',
 ];
 
 // Instalação do service worker e cache dos recursos
 self.addEventListener('install', event => {
-event.waitUntil(
-caches.open(CACHE_NAME).then(cache => {
-return Promise.all(urlsToCache.map(url =>
-cache.add(url).catch(err => {
-console.error(`Erro ao adicionar ${url} ao cache:`, err);
-})
-));
-}).then(() => self.skipWaiting())
-);
+    event.waitUntil(
+        caches.open(CACHE_NAME).then(cache => {
+            return Promise.all(urlsToCache.map(url =>
+                cache.add(url).catch(err => {
+                    console.error(`Erro ao adicionar ${url} ao cache:`, err);
+                })
+            ));
+        }).then(() => self.skipWaiting())
+    );
 });
+
 
 // Fetch event para servir recursos do cache
 self.addEventListener('fetch', event => {
