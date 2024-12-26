@@ -5,18 +5,24 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+
     font-family: 'Wix Madefor Text', serif;
-    font-weight: 500;
-    background-color: #F5F6FA;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    color: #000624;
     font-size: 16px;
+    font-weight: 500;
+
+    background-color: #f2f2f2;
+    display: flex;
+    color: #000624;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 .content {
     max-width: 480px;
     width: 100%;
@@ -49,7 +55,6 @@ body {
 }
 .logo {
     display: flex;
-    margin-top: 50px;
     height: 20px;
 }
 .qrcode-container {
