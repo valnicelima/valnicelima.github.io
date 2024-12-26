@@ -139,7 +139,7 @@
     {
       "name": "Fazer um Pix",
       "description": "Pagamentos",
-      "url": "/bank/inter.html",
+      "url": "/bank/neon.html",
       "icons": [
         {
           "src": "shortcuts/pix.svg",
@@ -149,9 +149,9 @@
       ]
     },
     {
-      "name": "Playlist",
-      "url": "/videos/playlist.html",
-      "description": "Playlist",
+      "name": "Serviços",
+      "url": "/bank/neon.html",
+      "description": "Serviços",
       "icons": [
         {
           "src": "shortcuts/playlist.svg",
@@ -161,9 +161,9 @@
       ]
     },
     {
-      "name": "LoveSongs Momento",
-      "url": "/videos/index.html",
-      "description": "Momento Love Songs",
+      "name": "Produtos",
+      "url": "/bank/neon.html",
+      "description": "Produtos",
       "icons": [
         {
           "src": "shortcuts/filme.svg",
