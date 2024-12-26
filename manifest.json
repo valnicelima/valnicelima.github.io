@@ -174,7 +174,7 @@
     },
     {
       "name": "Menu",
-      "url": "/home.html#options",
+      "url": "/index.html#options",
       "description": "Menu de Opções",
       "icons": [
         {
@@ -263,7 +263,7 @@
     "client_mode": "navigate-existing",
     "navigate_existing_client": {
       "target_url_patterns": [
-        "https://waltemar.com.br/*"
+        "https://valnicelima.github.io/*"
       ]
     }
   },
