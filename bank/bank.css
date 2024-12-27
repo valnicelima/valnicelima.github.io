@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -107,6 +108,13 @@ body {
     margin-bottom: 5px;
     color: #d90000;
 }
+.top-line{
+    width: 100px;
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: -16px;
+}
 .notification {
     display: none;
     position: fixed;
@@ -181,7 +189,7 @@ body {
     background: #FFFFFF;
     margin-bottom: 1px;
     border-radius: 10px;
-    /*text-transform: uppercase;*/
+    
 }
 .conta strong {
     font-size: 0.875rem;
