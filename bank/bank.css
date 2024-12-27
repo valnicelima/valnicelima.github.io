@@ -181,7 +181,7 @@ body {
     background: #FFFFFF;
     margin-bottom: 1px;
     border-radius: 10px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .conta strong {
     font-size: 0.875rem;
